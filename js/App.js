@@ -1,16 +1,19 @@
-import React from "react";
+import React from 'react'
 import ReactDOM from 'react-dom';
-import { Router, Route, Link } from 'react-router';
+import { HashRouter, Route, Switch } from 'react-router-dom'
 
 import Home from './components/Home';
 import A from './components/A';
 
-
-ReactDOM.render(
-    <Router>
-        <Route path='/' component={Home}>
-            <Route path='a' component={A}>123</Route>
-        </Route>
-    </Router>,
-    document.getElementById('root')
+const SliderComponent = () => (
+    <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path="/a" component={A}/>
+    </Switch>
 )
+
+ReactDOM.render((
+    <HashRouter>
+        <SliderComponent />
+    </HashRouter>
+), document.getElementById('root'));

@@ -9,5 +9,12 @@ module.exports = {
         rules: [
             {test: /\.jsx?$/, use: 'babel-loader', exclude: /node_modules/}
         ]
+    },
+    devServer: {
+        contentBase: './',
+        hot: true,
+        inline: true,
+        port: 8080,
+        open: true,
     }
 }
