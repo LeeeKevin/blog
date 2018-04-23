@@ -1,0 +1,110 @@
+.header{
+    width: 100%;
+    background: #333;
+    height: 50px;
+    color: #fff;
+}
+.header .main{
+    padding-left: 130px;
+    position: relative;
+    width: 1270px;
+    height: 100%;
+    margin: 0 auto;
+}
+.header .main .logo{
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 30px;
+}
+.header .main .logo img{
+    width: 120px;
+    height: 30px;
+}
+.header .main .logo a{
+    display: block;
+}
+
+.header .search{
+    position: relative;
+    padding-left: 10px;
+    float: left;
+    line-height: 50px;
+}
+.header .search input{
+    border-radius: 20px;
+    padding: 5px 25px 5px 8px;
+    background: #e1e1e1;
+}
+.header .search input:hover{
+    background: #fff;
+}
+.header .search input:active{
+    background: #fff;
+}
+.header .search input:focus{
+    background: #fff;
+}
+.header .search i.iconpic{
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    color: #333;
+}
+.header .nav{
+    float: right;
+    overflow: hidden;
+    height: 50px;
+}
+.header .nav li{
+    float: left;
+    padding: 0px 20px;
+    height: 50px;
+    line-height: 50px;
+}
+.header .nav li a{
+    font-size: 12px;
+    display: block;
+    color: #ccc;
+    line-height: 50px;
+    cursor: pointer;
+}
+.header .nav li a:hover{
+    color: #fff;
+}
+.content{
+    width: 100%;
+}
+.content .main{
+    position: relative;
+    width: 1400px;
+    margin: 15px auto;
+}
+.content .main .card{
+    width: 100%;
+}
+.content .main .card .title{
+    width: 100%;
+    height: 40px;
+    background: #f6f6f6;
+}
+.content .main .card .title ul li{
+    padding-left: 20px;
+    float: left;
+    line-height: 40px;
+}
+.content .main .card .title ul li a{
+    display: inline-block;
+    padding: 0 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 24px;
+    text-align: center;
+}
+.content .main .card .title ul li a.current{
+    background: yellowgreen;
+}
